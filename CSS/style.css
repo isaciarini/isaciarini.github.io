@@ -1,0 +1,102 @@
+* {
+margin: 0;
+padding: 0;
+}
+/* Esse arterisco serve para colocar uma regra em todo o CSS */
+
+html, body {
+    height: 100%;
+}
+
+body {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    background: rgb(54,77,204);
+    background: linear-gradient(180deg, rgba(54,77,204,1) 0%, rgba(19,35,124,1) 100%);
+}
+
+.avatar {
+    width: 80px;
+    border-radius: 50px ;
+    border: 3px solid white;
+    box-shadow: 0 0 20px white;
+}
+
+h1 {
+    font-family: 'Architects Daughter', cursive;
+    font-weight: 100;
+    font-size: 24px;
+    margin-bottom: 2px;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+.profile {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social {
+    display: flex; /* Flex - Faz com que os elementos "filhos" da tag fiquem alinhados lado a lado */
+    justify-content: space-around; /* essa propriedade só funciona com o flex*/
+    list-style: none; /* para remover as bolinhas da lista */
+    margin:  20px 0;
+}
+
+.social img {
+    width: 33px;
+}
+/*tem que colocar a class e tag do html para funcionar o tamanho*/
+
+.links-list {
+    list-style: none;
+}
+
+.links-list li {
+margin: 10px 20px
+}
+
+.links-list li a { /*regras aninhadas*/
+    background-color: white;
+    padding: 15px 20px;
+    display: block;
+    border-radius: 4px;
+    text-decoration: none;
+    color: rgb(54,77,204);
+    font-weight: bold;
+    border: 3px solid white;
+    box-shadow: 0 0 20px white;
+}
+
+.links-list li a span { 
+    color: gray;
+    display: block;
+    margin-top: 10px; /*só é possível colocar margin em um elemento inline se antes transformar ele em block*/  
+}
+
+.other-links {
+    list-style: none;
+}
+
+.other-links li {
+    margin: 10px 20px;
+}
+
+.other-links li a {
+    background-color: white;
+    padding: 15px 20px;
+    display: block;
+    border-radius: 4px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.other-links li a span { 
+    color: gray;
+    display: block;
+    margin-top: 10px;
+    border: 3px solid white;
+}
